@@ -1,0 +1,1 @@
+Day 6 task completed it contains set, get methode using class and objects

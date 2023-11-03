@@ -16,9 +16,9 @@ console.log(obj.title);
 console.log(obj.studio);
 console.log(obj.rating);
 var obj1 = new Movie("Casino royale","Eon productions")
-console.log(obj1.title);
-console.log(obj1.studio);
-console.log(obj1.rating);
+console.log(obj.title);
+console.log(obj.studio);
+console.log(obj.rating);
 
 //Q2: https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
 
@@ -78,29 +78,27 @@ class Person {
         this.salary=salary
     }
 }
-var obj = new Person("karsa","25","male","50000")
-var obj1 = new Person("sathika","20","female","60000")
-var obj2 = new Person("kathir","26","male","80000")
-var obj3 = new Person("hazana","23","female","60000")
+var obj9 = new Person("karsa","25","male","50000")
+var obj6 = new Person("sathika","20","female","60000")
+var obj7= new Person("kathir","26","male","80000")
+var obj8 = new Person("hazana","23","female","60000")
 
-console.log(obj2.name);
-console.log(obj2.age);
-console.log(obj2.gender);
-console.log(obj2.salary);
+console.log(obj9.name);
+console.log(obj6.age);
+console.log(obj7.gender);
+console.log(obj8.salary);
 
-//Q4:write a class to calculate the uber price.
-class uber {
-    constructor(Price){
-    this._Price = Price;
-    }
-    set _Price(n)
-    {
-      this._price=n*10;
-    }
-    get _Price()
-    {
-        this._Price
-    }
+//uber price methode 2:
+class  UberPrice{
+    constructor(kilometer,price=50)
+{
+    this.kilometer = kilometer;
+    this.Price = price;
+} get price(){
+    return this.kilometer*this.price;
 }
-var obj = new uber(5);
-console.log(obj._price);
+}var uber1 = new UberPrice(5);
+var uber2 = new UberPrice(5,125);
+console.log(uber1.Price);
+console.log(uber2.Price);
+
